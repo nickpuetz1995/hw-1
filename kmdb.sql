@@ -218,7 +218,7 @@ values(1, 1, "Bruce Wayne"),
 
 -- The SQL statement for the movies output
 -- TODO!
-
+select * from movies;
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -228,3 +228,4 @@ values(1, 1, "Bruce Wayne"),
 
 -- The SQL statement for the cast output
 -- TODO!
+select * from characters;
