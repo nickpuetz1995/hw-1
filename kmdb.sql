@@ -104,6 +104,32 @@
 
 -- Create new tables, according to your domain model
 -- TODO!
+create table movies (
+    id INTEGER primary key autoincrement,
+    title TEXT,
+    year_released INTEGER,
+    mpaa_rating TEXT,
+    sudio_id INTEGER
+);
+
+create table studios (
+    id integer primary key autoincrement,
+    studio_name TEXT,
+    studio_info TEXT
+);
+
+create table actors (
+    id integer primary key autoincrement,
+    first_name TEXT,
+    last_name TEXT
+);
+
+create table characters (
+    id integer primary key autoincrement,
+    movie_id integer,
+    actor_id integer,
+    character_name TEXT
+);
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
