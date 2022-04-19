@@ -114,7 +114,7 @@ create table movies (
     title TEXT,
     year_released INTEGER,
     mpaa_rating TEXT,
-    sudio_id INTEGER
+    studio_id INTEGER
 );
 
 create table studios (
