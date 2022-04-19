@@ -190,6 +190,27 @@ values(
 ("Tom", "Hardy"),
 ("Joseph", "Gordon-Levitt"),
 ("Anne", "Hathaway");
+
+insert into characters(
+    movie_id,
+    actor_id,
+    character_name
+)
+values(1, 1, "Bruce Wayne"),
+(1, 2, "Alfred"),
+(1, 3, "Ra's Al Ghul"),
+(1, 4, "Rachel Dawes"),
+(1, 5, "Commissioner Gordon"),
+(2, 1, "Bruce Wayne"),
+(2, 6, "Joker"),
+(2, 7, "Harvey Dent"),
+(2, 2, "Alfred"),
+(2, 8, "Rachel Dawes"),
+(3, 1, "Bruce Wayne"),
+(3, 5, "Commissioner Gordon"),
+(3, 9, "Bane"),
+(3, 10, "John Blake"),
+(3, 11, "Selina Kyle");
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
