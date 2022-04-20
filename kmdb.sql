@@ -218,7 +218,11 @@ values(1, 1, "Bruce Wayne"),
 
 -- The SQL statement for the movies output
 -- TODO!
-select * from movies;
+select movies.title, movies.year_released, movies.mpaa_rating, studios.studio_name
+from movies
+inner join studios
+on studios.id = movies.studio_id;
+
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -228,4 +232,9 @@ select * from movies;
 
 -- The SQL statement for the cast output
 -- TODO!
-select * from characters;
+select movies.title, actors.first_name, actors.last_name, characters.character_name
+from Movies
+inner join characters
+on characters.movie_id = movies.id
+inner join actors
+on characters.actor_id = actors.id;
